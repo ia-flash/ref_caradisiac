@@ -16,8 +16,8 @@ jobs:
         with:
           python-version: 3.7
       - name: Install dependencies
-        run: |
-          make venv
+        run: make venv
       - name: Crawls brands
-        run: |
-          make crawl-brand
+        run: make crawl-brand
+      - name: Crawls models
+        run: make crawl-models
